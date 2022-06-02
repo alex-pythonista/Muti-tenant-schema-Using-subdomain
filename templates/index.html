@@ -7,10 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+    <h3>{{tenant.name}}</h3>
     Members: <br>
+    <ol>
     {% for member in members %}
-    <i>{{member}}</i>
+    <li>{{member.name}}</li>
     {% endfor %}
-
+    </ol>
 </body>
 </html>
